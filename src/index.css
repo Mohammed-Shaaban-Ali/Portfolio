@@ -1,3 +1,113 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --color-bg: #1f1f38;
+    --color-1: #6400ff;
+    --color-2: #bd97f8;
+    --color-3: #ff37ffb5;
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.6);
+    --color-gray: #999;
+    --color-dark: #000;
+
+
+
+    --shadow: 0px 13px 13px rgba(0, 0, 0, 0.6);
+
+    --transition: all 400ms ease;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background: url("https://uploads-ssl.webflow.com/62e3ee10882dc50bcae8d07a/631a5d4631d4c55a475f3e34_noise-50.png");
+    background-color: #3c3a3f;
+    position: relative;
+    overflow-x: hidden;
+    -webkit-overflow-x: hidden;
+    color: white;
+}
+
+.containar {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+a {
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--color-bg-variant);
+}
+
+
+.btn {
+    width: max-content;
+    display: inline-block;
+    color: var(--color-primary);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: var(--color-dark);
+    color: var(--color-white);
+    border-color: transparent;
+}
+
+
+
+
+/* ===========ICON STYLES\===================== */
+.icon {
+    font-size: 2.4rem;
+}
+
+/* =====================MEDIA QUERIES FOR MEDIUM SCREENS================================ */
+@media screen and (max-width: 1024px) {
+    .containar {
+        width: 900px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .containar {
+        width: 660px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .containar {
+        width: 100%;
+    }
+}

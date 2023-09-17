@@ -1,0 +1,168 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 32px !important;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.left {
+    width: 60px;
+}
+
+.left img {
+    width: 100%;
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    font-size: 16px;
+}
+
+.link {
+
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+
+.link:hover,
+.active {
+    background: -webkit-linear-gradient(var(--color-1), var(--color-3));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.right {
+    cursor: pointer;
+}
+
+.lang {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+.nav {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem 1rem;
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    border-radius: 3rem;
+    transform: translateX(-50%);
+    width: max-content;
+    column-gap: 2rem;
+    z-index: 3;
+}
+
+.nav_icon {
+    font-size: 2.8rem;
+    color: var(--color-2);
+}
+
+.nav_icon:hover {
+    color: var(--color-3);
+}
+
+.wrapper {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrapper.active::after {
+    content: "";
+    display: inline;
+    width: 20px;
+    height: 2px;
+    background-color: var(--color-1);
+}
+
+.wrapper.active:hover::after {
+    background-color: var(--color-white);
+}
+
+.wrapper span {
+    opacity: 0;
+    background-color: var(--color-bg-variant);
+    color: var(--color-white);
+    padding: 1px 2px;
+    border-radius: 3px;
+    transform: translateY(10px);
+    font-size: 0.9rem;
+    transition: all 800ms ease;
+}
+
+.wrapper span::after {
+    content: "";
+    position: absolute;
+    right: 50%;
+    background-color: red;
+    top: 6px;
+    z-index: -1;
+    transform: translateX(50%) rotate(45deg);
+    background-color: var(--color-bg-variant);
+    width: 10px;
+    height: 10px;
+}
+
+.wrapper:hover span {
+    opacity: 1;
+    transform: translateY(-5px);
+    background-color: var(--color-3);
+}
+
+@media screen and (max-width: 768px) {
+
+    .nav {
+        display: flex;
+    }
+
+    .center {
+        display: none;
+    }
+
+    .icon {
+        font-size: 1.8rem !important;
+    }
+
+    .wrapper span {
+        width: max-content;
+    }
+
+    .wrapper {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .nav {
+        width: 350px;
+        gap: 1rem;
+    }
+
+    .icon {
+        font-size: 1.5rem !important;
+    }
+
+    .wrapper span {
+        font-size: 0.7rem !important;
+        width: max-content;
+    }
+
+    .wrapper {
+        width: 40px;
+    }
+}
