@@ -17,26 +17,39 @@ import logo from "../../assets/logo.png";
 
 const Navbar = () => {
   const [lang, setlang] = useState(true);
-
   let languages = [];
   if (lang) {
     languages = [
       {
-        code: "en",
+        code: "ar",
         name: "English",
+        dir: "ltr",
         country_code: "gb",
       },
     ];
   } else {
     languages = [
       {
-        code: "ar",
+        code: "en",
         name: "العربية",
         dir: "rtl",
         country_code: "sa",
       },
     ];
   }
+
+  // const currentLanguageCode = cookies.get("i18next") || "en";
+  // const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
+  const { t } = useTranslation();
+  // console.log(t("welcome_message"));
+
+  useEffect(() => {
+    if (lang) {
+      document.body.dir = "ltr";
+    } else document.body.dir = "rtl";
+    //   document.body.dir = currentLanguage?.dir ? currentLanguage.dir : "ltr";
+    // console.log(document.body.dir);
+  }, [lang]);
 
   return (
     <>
@@ -72,18 +85,18 @@ const Navbar = () => {
             className="lang"
           >
             {languages.map(({ code, name, country_code }) => (
-              <li key={country_code}>
+              <div key={country_code}>
                 <div
                   onClick={() => {
                     i18next.changeLanguage(code);
                   }}
                 >
+                  {t("welcome_message")}
                   <span
                     className={`flag-icon flag-icon-${country_code} mx-2`}
                   ></span>
-                  {name}
                 </div>
-              </li>
+              </div>
             ))}
           </div>
         </div>
