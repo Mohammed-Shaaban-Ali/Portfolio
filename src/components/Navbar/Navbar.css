@@ -3,8 +3,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 16px 32px !important;
+    padding: 10px 32px !important;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.1);
+    background-color: #211c2a;
 }
 
 .left {
@@ -64,7 +65,7 @@
 
 .nav_icon {
     font-size: 2.8rem;
-    color: var(--color-2);
+    color: var(--color-4);
 }
 
 .nav_icon:hover {
