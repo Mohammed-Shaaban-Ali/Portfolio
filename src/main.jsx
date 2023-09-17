@@ -1,8 +1,8 @@
+import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 import React, { Suspense } from "react";
-import ReactDOM from "react-dom/client";
 import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
 import HttpApi from "i18next-http-backend";
