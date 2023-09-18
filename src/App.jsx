@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 import MainPage from "./pages/MainPage";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path="/home" element={<MainPage />} />
+        <Route path="/" element={<MainPage />} />
       </Routes>
       <Footer />
     </>
