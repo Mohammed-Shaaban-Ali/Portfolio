@@ -86,12 +86,13 @@ a:hover {
     border-color: transparent;
 }
 
-
-
-
 /* ===========ICON STYLES\===================== */
 .icon {
     font-size: 2.4rem;
+}
+
+.name {
+    font-size: 1.4em !important;
 }
 
 /* =====================MEDIA QUERIES FOR MEDIUM SCREENS================================ */
@@ -104,6 +105,14 @@ a:hover {
 @media screen and (max-width: 768px) {
     .containar {
         width: 660px;
+    }
+
+    .name {
+        font-size: 0.8em !important;
+    }
+
+    .who {
+        font-size: 0.5em;
     }
 }
 
@@ -129,15 +138,6 @@ a:hover {
 
 }
 
-/* 
-body {
-    background: url("https://uploads-ssl.webflow.com/62e3ee10882dc50bcae8d07a/631a5d4631d4c55a475f3e34_noise-50.png");
-    background-color: #5C546B;
-    position: relative;
-    overflow-x: hidden;
-    -webkit-overflow-x: hidden;
-} */
-
 .overflow-hidden-web {
     overflow: hidden;
     -webkit-overflow: hidden;
@@ -162,8 +162,8 @@ body {
 }
 
 #repulse-div>h1 {
-    -webkit-filter: drop-shadow(0 0 5rem #292D44);
-    filter: drop-shadow(0 0 5rem #292D44);
+    -webkit-filter: drop-shadow(-4rem 0rem 5rem var(--color-3));
+    filter: drop-shadow(-4rem 0rem 5rem var(--color-3));
 }
 
 #journey-scroll::-webkit-scrollbar {

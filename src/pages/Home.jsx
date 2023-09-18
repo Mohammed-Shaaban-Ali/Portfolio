@@ -1,8 +1,11 @@
 import { m, LazyMotion, domAnimation } from "framer-motion";
 
 import HeroParticles from "../components/Particles/HeroParticles";
+import { useTranslation } from "react-i18next";
 const Home = () => {
-  const name = "MOHAMED";
+  const { t } = useTranslation();
+  const who = t("Who`s");
+  const name = t("name");
   return (
     <div
       id="hero"
@@ -11,7 +14,7 @@ const Home = () => {
       <LazyMotion features={domAnimation} strict>
         <m.div
           id="hero"
-          className="relative w-full flex justify-center items-center h-screen min-h-[800px]"
+          className="relative w-full flex justify-center items-center h-screen min-h-[600px]"
         >
           {/* HeroText  */}
           <div
@@ -30,8 +33,9 @@ const Home = () => {
                   initial={{ x: -100 }}
                   whileInView={{ x: 0 }}
                   transition={{ duration: 0.6, type: "spring" }}
+                  className="who"
                 >
-                  Who's{" "}
+                  {who}{" "}
                 </m.span>
                 <m.div
                   initial={{ x: 100 }}
@@ -45,8 +49,7 @@ const Home = () => {
                     return (
                       <span
                         key={index}
-                        className="text-primary-400 bounce"
-                        style={{ fontSize: "1.2em" }}
+                        className="name text-primary-400 bounce"
                       >
                         {char}
                       </span>
