@@ -6,6 +6,8 @@ const Home = () => {
   const { t } = useTranslation();
   const who = t("Who`s");
   const name = t("name");
+  const font = t("font");
+
   return (
     <div
       id="hero"
@@ -34,10 +36,12 @@ const Home = () => {
                   whileInView={{ x: 0 }}
                   transition={{ duration: 0.6, type: "spring" }}
                   className="who"
+                  style={{ marginBottom: "20px" }}
                 >
                   {who}{" "}
                 </m.span>
                 <m.div
+                  className={`${font}`}
                   initial={{ x: 100 }}
                   whileInView={{ x: 0 }}
                   transition={{ duration: 0.6, type: "spring" }}
@@ -49,7 +53,7 @@ const Home = () => {
                     return (
                       <span
                         key={index}
-                        className="name text-primary-400 bounce"
+                        className="  name text-primary-400 bounce"
                       >
                         {char}
                       </span>

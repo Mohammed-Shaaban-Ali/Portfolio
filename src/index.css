@@ -16,8 +16,8 @@
 
 :root {
     --color-bg: #1f1f38;
-    --color-1: #6400ff;
-    --color-4: #853cf6;
+    --color-1: #833dec;
+    --color-4: #975cf0;
     --color-2: #bd97f8;
     --color-3: #ff37ffb5;
     --color-white: #fff;
@@ -44,6 +44,15 @@ body {
     overflow-x: hidden;
     -webkit-overflow-x: hidden;
     color: white;
+}
+
+.arabFont {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.enFont {
+    font-family: SuperMario !important;
 }
 
 .containar {
@@ -88,11 +97,11 @@ a:hover {
 
 /* ===========ICON STYLES\===================== */
 .icon {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
 }
 
 .name {
-    font-size: 1.4em !important;
+    font-size: 1.2em !important;
 }
 
 /* =====================MEDIA QUERIES FOR MEDIUM SCREENS================================ */
@@ -113,6 +122,10 @@ a:hover {
 
     .who {
         font-size: 0.5em;
+    }
+
+    .HeroParticles {
+        min-height: 500px;
     }
 }
 
@@ -162,8 +175,8 @@ a:hover {
 }
 
 #repulse-div>h1 {
-    -webkit-filter: drop-shadow(-4rem 0rem 5rem var(--color-3));
-    filter: drop-shadow(-4rem 0rem 5rem var(--color-3));
+    -webkit-filter: drop-shadow(-4rem 0rem 10rem var(--color-3));
+    filter: drop-shadow(-4rem 0rem 10rem var(--color-3));
 }
 
 #journey-scroll::-webkit-scrollbar {
@@ -270,8 +283,8 @@ polyline {
     .drop-shadow-div {
         -webkit-appearance: none;
         appearance: none;
-        -webkit-filter: drop-shadow(0 0 1.5rem #cbbde5);
-        filter: drop-shadow(0 0 1.5rem #cbbde5);
+        -webkit-filter: drop-shadow(0 0 1.5rem var(--color-2));
+        filter: drop-shadow(0 0 1.5rem var(--color-2));
     }
 }
 
@@ -306,4 +319,23 @@ polyline {
     100% {
         transform: rotate(360deg);
     }
+}
+
+.arabFontsiz {
+    font-size: 24px;
+}
+
+.blur {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    filter: blur(150px);
+    z-index: -1;
+}
+
+.aboutblur {
+    top: 20%;
+    left: 10%;
+    background-color: var(--color-2);
 }
