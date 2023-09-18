@@ -1,3 +1,16 @@
 {
-  "home": "الرايس"
+  "navbar": {
+    "nav": [
+      { "name": "الرئيسية", "path": "/" },
+      { "name": "حول الموقع", "path": "/about" },
+      { "name": "المهارات", "path": "/skills" },
+      { "name": "المشاريع", "path": "/projects" },
+      { "name": "التعليم", "path": "/enducation" },
+      { "name": "تواصل معي", "path": "/contanent" }
+    ]
+  },
+  "Linkedin": "لينكد ان",
+  "Github": "جيت هب",
+  "Whatsapp": "واتساب",
+  "Facebook": "فيس بوك"
 }
