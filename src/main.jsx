@@ -9,6 +9,8 @@ import HttpApi from "i18next-http-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
 
 import "flag-icon-css/css/flag-icon.min.css";
+import PreloadMedia from "./components/PreloadMedia.jsx";
+import { media } from "./Constants/constants.js";
 
 i18next
   .use(initReactI18next)
@@ -29,16 +31,13 @@ i18next
     },
   });
 
-const loadingMarkup = (
-  <div className="py-4 text-center">
-    <h3>Loading..</h3>
-  </div>
-);
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <Suspense fallback={loadingMarkup}>
+  <Suspense fallback={PreloadMedia}>
     <React.StrictMode>
       <BrowserRouter>
-        <App />
+        <PreloadMedia images={Object.values(media)}>
+          <App />
+        </PreloadMedia>
       </BrowserRouter>
     </React.StrictMode>
   </Suspense>
