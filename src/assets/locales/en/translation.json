@@ -1,4 +1,7 @@
 {
+  "Who`s": "Who`s",
+
+  "name": "MOHAMED",
   "navbar": {
     "nav": [
       { "name": "Home", "path": "/" },
