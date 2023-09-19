@@ -10,7 +10,6 @@
       { "name": "About", "path": "/about" },
       { "name": "Skills", "path": "/skills" },
       { "name": "Projects", "path": "/projects" },
-      { "name": "Education", "path": "/enducation" },
       { "name": "Content", "path": "/contanent" }
     ]
   },

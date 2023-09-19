@@ -303,21 +303,22 @@ polyline {
 }
 
 .aboutblur {
-    top: 20%;
-    left: 10%;
+    top: 50%;
+    left: 80%;
     background-color: var(--color-4);
 }
 
+
 .blurskills {
-    top: 20%;
+    top: 40%;
     left: 10%;
-    background-color: var(--color-3);
+    background-color: var(--color-4);
 }
 
 .blurskills2 {
     top: 50%;
     left: 80%;
-    background-color: var(--color-4);
+    background-color: var(--color-3);
 }
 
 .dirction {
@@ -351,10 +352,23 @@ polyline {
     .arabFontsiz {
         font-size: 18px;
     }
+
+    .heroblur {
+        top: 30%;
+        right: 20%;
+        filter: blur(100px);
+        background-color: var(--color-bg);
+    }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .containar {
         width: 100%;
     }
+
+    #hero {
+        height: 80vh;
+    }
+
+
 }
