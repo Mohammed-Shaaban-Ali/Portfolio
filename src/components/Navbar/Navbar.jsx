@@ -17,6 +17,14 @@ import logo from "../../assets/logo.png";
 
 const Navbar = () => {
   const { t } = useTranslation();
+  const navbarICon = [
+    <AiTwotoneHome />,
+    <FaUserAlt />,
+    <FaBookOpen />,
+    <SiUpwork />,
+    <FaAward />,
+    <AiFillMessage />,
+  ];
   const navBar = t("navbar.nav", { returnObjects: true });
 
   const languages = [
@@ -97,7 +105,16 @@ const Navbar = () => {
       </div>
 
       <div className="nav">
-        <div className={`wrapper`}>
+        {typeof navBar !== "string" &&
+          navBar?.map((nav, i) => (
+            <div key={i} className={`wrapper  `}>
+              <span>{nav.name}</span>
+              <NavLink to={nav.path} className={`icon nav_icon`}>
+                {navbarICon[i]}
+              </NavLink>
+            </div>
+          ))}
+        {/* <div className={`wrapper`}>
           <span>Home</span>
           <NavLink className={`icon nav_icon`}>
             <AiTwotoneHome />
@@ -129,13 +146,12 @@ const Navbar = () => {
             <FaAward />
           </NavLink>
         </div>
-
         <div className={`wrapper  `}>
           <span>Talk Me</span>
-          <a href="#contact" className={`icon nav_icon`}>
+          <NavLink className={`icon nav_icon`}>
             <AiFillMessage />
-          </a>
-        </div>
+          </NavLink>
+        </div> */}
       </div>
     </>
   );

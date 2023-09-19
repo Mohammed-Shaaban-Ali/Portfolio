@@ -68,7 +68,8 @@
     color: var(--color-4);
 }
 
-.nav_icon:hover {
+.nav_icon:hover,
+.active {
     color: var(--color-3);
 }
 
@@ -88,6 +89,10 @@
     width: 20px;
     height: 2px;
     background-color: var(--color-1);
+}
+
+.wrapper.active {
+    background-color: red !important;
 }
 
 .wrapper.active:hover::after {
@@ -135,7 +140,7 @@
     }
 
     .icon {
-        font-size: 1.8rem !important;
+        font-size: 2rem !important;
     }
 
     .wrapper span {
@@ -143,7 +148,7 @@
     }
 
     .wrapper {
-        width: 40px;
+        width: 70px;
     }
 }
 
@@ -154,16 +159,12 @@
         gap: 1rem;
     }
 
-    .icon {
-        font-size: 1.5rem !important;
-    }
+
 
     .wrapper span {
         font-size: 0.7rem !important;
         width: max-content;
     }
 
-    .wrapper {
-        width: 40px;
-    }
+
 }
