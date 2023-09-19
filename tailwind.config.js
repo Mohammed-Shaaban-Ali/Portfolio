@@ -9,7 +9,7 @@ export default {
     colors: {
       primary: {
         400: "#975cf0", //203 189 229
-        500: "#d0b3fb", //255 188 235
+        500: "#dcc2ff", //255 188 235
         600: "#975cf0", //149 136 170
       },
       grayscale: {
