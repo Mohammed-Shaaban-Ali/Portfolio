@@ -21,6 +21,8 @@
   "Facebook": "Facebook",
   "about": "About Me",
   "Introduction": "Introduction",
+  "skillsSction": "SKILLS",
+  "skillsSubtitle": "WHAT I DO",
   "about_content": [
     "Hello there, I'm so happy you are here! (:",
 
@@ -58,7 +60,7 @@
         "id": "java",
         "title": "Java",
         "icon": "javaIcon",
-        "description": "I have extensive experience utilizing Java for object-oriented programming (OOP) and implementing data structures."
+        "description": "I have extensive utilizing Java for object-oriented programming (OOP)."
       },
 
       {
@@ -86,13 +88,6 @@
         "title": "Node",
         "icon": "nodeIcon",
         "description": "When it comes to building web applications, I prefer using Node as my runtime environment over Yarn. I have expertise in leveraging Node.js to develop powerful and scalable web applications."
-      },
-
-      {
-        "id": "eslint",
-        "title": "Eslint",
-        "icon": "eslintIcon",
-        "description": "I utilize ESLint to identify and resolve code issues, as well as standardize the structure of my projects. With ESLint, I ensure code quality and consistency throughout my development process."
       }
     ]
   }

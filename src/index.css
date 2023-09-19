@@ -18,7 +18,7 @@
     --color-bg: #1f1f38;
     --color-1: #833dec;
     --color-4: #975cf0;
-    --color-2: #bd97f8;
+    --color-2: #d0b3fb;
     --color-3: #ff37ffb5;
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.6);
@@ -39,7 +39,7 @@ html {
 
 body {
     background: url("https://uploads-ssl.webflow.com/62e3ee10882dc50bcae8d07a/631a5d4631d4c55a475f3e34_noise-50.png");
-    background-color: #282131;
+    background-color: #444158;
     position: relative;
     overflow-x: hidden;
     -webkit-overflow-x: hidden;
@@ -103,39 +103,6 @@ a:hover {
 .name {
     font-size: 1.2em !important;
 }
-
-/* =====================MEDIA QUERIES FOR MEDIUM SCREENS================================ */
-@media screen and (max-width: 1024px) {
-    .containar {
-        width: 900px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .containar {
-        width: 660px;
-    }
-
-    .name {
-        font-size: 0.8em !important;
-    }
-
-    .who {
-        font-size: 0.5em;
-    }
-
-    .HeroParticles {
-        min-height: 500px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .containar {
-        width: 100%;
-    }
-}
-
-
 
 
 @font-face {
@@ -322,20 +289,72 @@ polyline {
 }
 
 .arabFontsiz {
-    font-size: 24px;
+    font-size: 22px;
+    line-height: 30px;
 }
 
 .blur {
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
-    filter: blur(150px);
+    filter: blur(120px);
     z-index: -1;
 }
 
 .aboutblur {
     top: 20%;
     left: 10%;
-    background-color: var(--color-2);
+    background-color: var(--color-4);
+}
+
+.blurskills {
+    top: 20%;
+    left: 10%;
+    background-color: var(--color-3);
+}
+
+.blurskills2 {
+    top: 50%;
+    left: 80%;
+    background-color: var(--color-4);
+}
+
+.dirction {
+    direction: ltr;
+}
+
+/* =====================MEDIA QUERIES FOR MEDIUM SCREENS================================ */
+@media screen and (max-width: 1024px) {
+    .containar {
+        width: 900px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .containar {
+        width: 660px;
+    }
+
+    .name {
+        font-size: 0.8em !important;
+    }
+
+    .who {
+        font-size: 0.5em;
+    }
+
+    .HeroParticles {
+        min-height: 500px;
+    }
+
+    .arabFontsiz {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .containar {
+        width: 100%;
+    }
 }
