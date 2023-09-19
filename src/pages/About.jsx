@@ -1,10 +1,12 @@
 import { m, LazyMotion, domAnimation } from "framer-motion";
-
+import { useLocation } from "react-router-dom";
 import SectionTitle from "../components/SectionTitle";
 import ImageSlider from "../components/ImageSlider";
 import avater from "../assets/avatar/avatar.png";
 import { useTranslation } from "react-i18next";
 const About = () => {
+  const { pathname } = useLocation();
+
   const { t } = useTranslation();
   const title = t("about");
   const subtitle = t("Introduction");
@@ -14,7 +16,9 @@ const About = () => {
   return (
     <div
       id="about"
-      className="w-full flex justify-center overflow-hidden-web  relative"
+      className={`w-full flex justify-center overflow-hidden-web  relative ${
+        pathname === "/about" && "min-h-[75vh]"
+      } `}
     >
       <div className="blur aboutblur"></div>
 

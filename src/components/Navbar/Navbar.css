@@ -155,16 +155,22 @@
 @media screen and (max-width: 500px) {
 
     .nav {
-        width: 350px;
+        width: 300px;
         gap: 1rem;
     }
 
 
+    .icon {
+        font-size: 1.5rem !important;
+    }
 
     .wrapper span {
         font-size: 0.7rem !important;
         width: max-content;
     }
 
+    .wrapper {
+        max-width: 60px;
+    }
 
 }
