@@ -22,7 +22,7 @@ const Navbar = () => {
     <FaUserAlt />,
     <FaBookOpen />,
     <SiUpwork />,
-    <FaAward />,
+    // <FaAward />,
     <AiFillMessage />,
   ];
   const navBar = t("navbar.nav", { returnObjects: true });
