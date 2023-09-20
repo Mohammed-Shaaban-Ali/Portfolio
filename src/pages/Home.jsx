@@ -13,6 +13,8 @@ const Home = () => {
       id="hero"
       className="w-full flex justify-center overflow-hidden-web relative"
     >
+      <div className="blur homeblur"></div>
+      <div className="blur homeblur2"></div>
       <LazyMotion features={domAnimation} strict>
         <div className="blur heroblur"></div>
         <m.div
