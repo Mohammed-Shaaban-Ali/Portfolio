@@ -40,7 +40,7 @@ i18next
               { name: "About", path: "/about" },
               { name: "Skills", path: "/skills" },
               { name: "Projects", path: "/projects" },
-              { name: "Content", path: "/contanent" },
+              { name: "Content", path: "/content" },
             ],
           },
 
@@ -159,7 +159,7 @@ i18next
               { name: "حولي", path: "/about" },
               { name: "المهارات", path: "/skills" },
               { name: "المشاريع", path: "/projects" },
-              { name: "تواصل", path: "/contanent" },
+              { name: "تواصل", path: "/content" },
             ],
           },
           about_content: [
