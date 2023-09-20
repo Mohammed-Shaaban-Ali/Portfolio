@@ -302,9 +302,21 @@ polyline {
     z-index: -1;
 }
 
-.aboutblur {
+.homeblur {
+    top: 10%;
+    left: 20%;
+    background-color: var(--color-3);
+}
+
+.homeblur2 {
     top: 50%;
     left: 80%;
+    background-color: var(--color-3);
+}
+
+.aboutblur {
+    top: 30%;
+    left: 10%;
     background-color: var(--color-4);
 }
 
@@ -321,14 +333,78 @@ polyline {
     background-color: var(--color-3);
 }
 
+.blurcontant {
+    top: 65%;
+    left: 65%;
+    background-color: var(--color-3);
+}
+
+.blurcontant2 {
+    top: 15%;
+    left: 15%;
+    background-color: var(--color-4);
+}
+
+
 .dirction {
     direction: ltr;
+}
+
+.skillsborder {
+    border-left: 4px solid var(--color-2);
+    border-right: 4px solid var(--color-2);
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    height: 45px;
+    border-radius: 8px;
+    margin-top: 8px;
+    background-color: var(--color-2);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgb(92, 92, 92);
+    font-size: 18px;
+}
+
+textarea {
+    height: 140px;
+}
+
+.btn {
+    width: 220px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: var(--color-1);
+}
+
+.formamrgn {
+
+    gap: 50px;
+    margin-bottom: 100px;
 }
 
 /* =====================MEDIA QUERIES FOR MEDIUM SCREENS================================ */
 @media screen and (max-width: 1024px) {
     .containar {
         width: 900px;
+    }
+
+    .skillsborder {
+        border: none;
+    }
+
+    .formamrgn {
+        /* margin-top: 90px !important; */
+        /* margin-bottom: -200px; */
     }
 }
 
@@ -359,6 +435,11 @@ polyline {
         filter: blur(100px);
         background-color: var(--color-bg);
     }
+
+    .formamrgn {
+        margin-bottom: 80px;
+
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -370,5 +451,21 @@ polyline {
         height: 80vh;
     }
 
+
+    input::placeholder,
+    textarea::placeholder {
+        color: rgb(92, 92, 92);
+        font-size: 16px;
+    }
+
+    .formamrgn {
+        margin-bottom: 16px;
+        gap: 8px;
+
+    }
+
+    .btn {
+        font-weight: normal;
+    }
 
 }

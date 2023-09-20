@@ -10,7 +10,7 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="relative w-full overflow-hidden-web flex justify-center"
+      className=" relative w-full overflow-hidden-web flex justify-center"
     >
       <div className="w-full min-h-[800px] flex flex-col xl:w-[70%]">
         <div className="blur blurskills"></div>
@@ -18,7 +18,7 @@ const Skills = () => {
         <div className="w-full">
           <SectionTitle title={title} subtitle={subtitle} />
         </div>
-        <div className="xl:border-l-2 xl:border-r-2 xl:border-primary-400 h-full dirction">
+        <div className="xl:border-l-2 xl:border-r-2 xl:border-primary-400 h-full dirction skillsborder">
           <div className="relative">
             <div className="absolute top-[45px] w-full h-[1px] bg-primary-400"></div>
             <MarqueeCards direction="left">
