@@ -35,6 +35,7 @@
     "react-particles": "^2.12.2",
     "react-router-dom": "^6.16.0",
     "react-simple-typewriter": "^5.0.1",
+    "swiper": "^10.2.0",
     "tsparticles": "^2.12.0"
   },
   "devDependencies": {
