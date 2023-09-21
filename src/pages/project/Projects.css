@@ -1,0 +1,96 @@
+.containerimage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin: 16px 0 50px;
+}
+
+.cardimage {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 165px;
+    position: relative;
+    border: 2px solid var(--color-4);
+    cursor: pointer;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+
+
+.overlaycard {
+    position: inherit;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0));
+}
+
+
+.cardicon {
+    position: absolute;
+    right: -60%;
+    top: -100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cardimage:hover .overlaycard {
+    position: absolute;
+}
+
+.cardimage:hover .cardicon {
+    right: 6%;
+    top: 10%;
+}
+
+.gallary {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.607);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxcontainer {
+    position: relative;
+    width: 70%;
+    height: 80%;
+    z-index: 20;
+    background-color: white
+}
+
+.closeimage {
+    position: absolute;
+    top: -16px;
+    right: -16px;
+    width: 32px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.closeimage img {
+    width: 100%;
+}
+
+.imageslider {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    height: 100%;
+}
+
+.imageslider img {
+    width: 100%;
+    /* height: 100%; */
+}

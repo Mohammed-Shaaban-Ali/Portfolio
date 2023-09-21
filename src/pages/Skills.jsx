@@ -18,9 +18,9 @@ const Skills = () => {
         <div className="w-full">
           <SectionTitle title={title} subtitle={subtitle} />
         </div>
-        <div className="xl:border-l-2 xl:border-r-2 xl:border-primary-400 h-full dirction skillsborder">
+        <div className="xl:border-l-2 xl:border-r-2 xl:border-primary-400  dirction skillsborder">
           <div className="relative">
-            <div className="absolute top-[45px] w-full h-[1px] bg-primary-400"></div>
+            <div className="absolute top-[45px] w-full h-[1px]  bg-primary-400"></div>
             <MarqueeCards direction="left">
               <SkillsCards />
             </MarqueeCards>

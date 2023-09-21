@@ -18,6 +18,8 @@ i18next
     resources: {
       en: {
         translation: {
+          project: "PROJECTS",
+          projectsub: "WHAT I HAVE DONE",
           formtext: "Let's get in touch!",
           formnanme: "Name",
           formnanmeplas: "Enter your name",
@@ -133,6 +135,8 @@ i18next
       },
       ar: {
         translation: {
+          project: "المشاريع",
+          projectsub: "ما فعلته",
           formnanme: "الاسم",
           formnanmeplas: "من فضلك ادخل الاسم كامل",
           formemail: "جيميل",

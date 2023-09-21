@@ -402,11 +402,9 @@ textarea {
         border: none;
     }
 
-    .formamrgn {
-        /* margin-top: 90px !important; */
-        /* margin-bottom: -200px; */
-    }
+
 }
+
 
 @media screen and (max-width: 768px) {
     .containar {
