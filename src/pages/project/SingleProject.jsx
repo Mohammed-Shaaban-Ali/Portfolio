@@ -32,23 +32,3 @@ const SingleProject = ({ setopen, project }) => {
 };
 
 export default SingleProject;
-
-//  <Swiper
-//    slidesPerView={1}
-//    spaceBetween={30}
-//    keyboard={{
-//      enabled: true,
-//    }}
-//    pagination={{
-//      clickable: true,
-//    }}
-//    navigation={true}
-//    modules={[Keyboard, Pagination, Navigation]}
-//    className="mySwiper w-full h-full"
-//  >
-//    {project?.image.map((ima, i) => (
-//      <SwiperSlide className="image" key={i}>
-//        <img width={300} src={ima} alt="ima" />
-//      </SwiperSlide>
-//    ))}
-//  </Swiper>;
