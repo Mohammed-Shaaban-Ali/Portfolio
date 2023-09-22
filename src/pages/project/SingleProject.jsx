@@ -38,7 +38,7 @@ const SingleProject = ({ setopen, project }) => {
             className="mySwiper w-full h-full"
           >
             {project?.image.map((ima, i) => (
-              <SwiperSlide key={i}>
+              <SwiperSlide className="image" key={i}>
                 <img width={300} src={ima} alt="ima" />
               </SwiperSlide>
             ))}

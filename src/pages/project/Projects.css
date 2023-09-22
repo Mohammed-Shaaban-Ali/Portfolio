@@ -11,6 +11,18 @@
     display: flex;
     flex-direction: column;
     width: 300px;
+    height: 230px;
+    gap: 16px;
+    box-shadow: 0px 0px 4px 0px var(--color-4);
+    padding: 8px;
+    /* cursor: pointer; */
+}
+
+.imagecontent {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     height: 165px;
     position: relative;
     border: 2px solid var(--color-4);
@@ -23,9 +35,11 @@
 
 .overlaycard {
     position: inherit;
-    width: 100%;
+    width: 30%;
+    right: 0;
+    z-index: 1;
     height: 100%;
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0));
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0));
 }
 
 
@@ -47,6 +61,39 @@
 .cardimage:hover .cardicon {
     right: 6%;
     top: 10%;
+    z-index: 2;
+}
+
+.image {
+    width: 100%;
+}
+
+.image img {
+    object-fit: cover;
+    overflow: hidden;
+    transition: 4s ease-in-out;
+    width: 100%;
+}
+
+.image:hover img,
+.overlaycard:hover img {
+    transform: translateY(calc(-100% + 165px));
+    transition: 6s ease;
+}
+
+.projectContent {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-weight: bold;
+    padding: 0 0 0 8px;
+    font-size: 20px;
+}
+
+.projectContent p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
 }
 
 .gallary {
@@ -93,4 +140,70 @@
 .imageslider img {
     width: 100%;
     /* height: 100%; */
+}
+
+.catrgories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: 32px 0 50px;
+    font-size: 18px;
+}
+
+.catrgory {
+    padding: 6px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid var(--color-4);
+    letter-spacing: 1.2px;
+    background-color: #833dec45;
+}
+
+.categoryactiv,
+.catrgory:hover {
+    background: linear-gradient(120deg, var(--color-4), var(--color-3));
+}
+
+.btnproject {
+    margin: 16px 40px 32px;
+    width: 200px;
+    height: 40px;
+    transition: all 0.5s;
+}
+
+.btnproject a {
+    padding: 6px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid var(--color-4);
+    letter-spacing: 1.2px;
+    background-color: #833dec45;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.btnproject .viewall {
+    display: none;
+}
+
+.btnproject .LastProject {
+    display: inline-table;
+}
+
+.btnproject:hover .viewall {
+    display: inline-table;
+}
+
+.btnproject:hover .LastProject {
+    display: none;
+}
+
+
+.btnproject .LastProject:hover,
+.btnproject .viewall:hover {
+    background: linear-gradient(120deg, var(--color-4), var(--color-3));
 }

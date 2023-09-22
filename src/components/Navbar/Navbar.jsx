@@ -45,7 +45,7 @@ const Navbar = () => {
   const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
 
   useEffect(() => {
-    document.body.dir = currentLanguage.dir || "ltr";
+    document.body.dir = currentLanguage?.dir || "ltr";
   }, [currentLanguage, t]);
 
   return (

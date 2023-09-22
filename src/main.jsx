@@ -18,6 +18,8 @@ i18next
     resources: {
       en: {
         translation: {
+          lastProject: "Last Project",
+          viewall: "View All",
           project: "PROJECTS",
           projectsub: "WHAT I HAVE DONE",
           formtext: "Let's get in touch!",
@@ -135,6 +137,8 @@ i18next
       },
       ar: {
         translation: {
+          lastProject: "احدث المشاريع",
+          viewall: "عرض الكل",
           project: "المشاريع",
           projectsub: "ما فعلته",
           formnanme: "الاسم",
