@@ -14,7 +14,7 @@ import SingleProject from "./SingleProject";
 
 const projects = [
   {
-    image: [image1],
+    image: [image1, image1],
     title: "E-Commerce",
     github: "",
     demo: "",
@@ -164,6 +164,8 @@ const Projects = () => {
   return (
     <>
       <div className=" relative w-full overflow-hidden-web flex justify-center">
+        <div className="blur projectblur"></div>
+        <div className="blur projectblu2"></div>
         <div className="w-full  flex flex-col xl:w-[70%]">
           <div className="w-full">
             <SectionTitle title={title} subtitle={subtitle} />

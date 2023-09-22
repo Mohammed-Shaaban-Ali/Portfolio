@@ -345,6 +345,17 @@ polyline {
     background-color: var(--color-4);
 }
 
+.projectblur {
+    top: 24%;
+    left: 8%;
+    background-color: var(--color-3);
+}
+
+.projectblu2 {
+    top: 55%;
+    left: 75%;
+    background-color: var(--color-1);
+}
 
 .dirction {
     direction: ltr;
@@ -438,11 +449,19 @@ textarea {
         margin-bottom: 80px;
 
     }
+
+
+
+
 }
 
 @media screen and (max-width: 500px) {
     .containar {
         width: 100%;
+    }
+
+    .carousel .thumbs {
+        display: none;
     }
 
     #hero {
