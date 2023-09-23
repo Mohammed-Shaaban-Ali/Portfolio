@@ -10,20 +10,27 @@ import { BsFillEyeFill } from "react-icons/bs";
 import { BsFillCursorFill } from "react-icons/bs";
 
 import image1 from "../../assets/projects/1.png";
+import image1_2 from "../../assets/projects/1-2.png";
+import image1_3 from "../../assets/projects/1-3.png";
+import image1_4 from "../../assets/projects/1-4.png";
+import image1_5 from "../../assets/projects/1-5.png";
+import image1_6 from "../../assets/projects/1-6.png";
+import image1_7 from "../../assets/projects/1-7.png";
+
 import SingleProject from "./SingleProject";
 
 const projects = [
   {
-    image: [image1, image1],
+    image: [image1, image1_2, image1_3, image1_4, image1_5, image1_6, image1_7],
     title: "E-Commerce",
     github: "",
-    demo: "",
+    demo: "https://e-commerce-v8ra.onrender.com/",
     descrtiption:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi quidem tenetur eius, ullam quis.",
     category: "Full Stack",
   },
   {
-    image: [image1],
+    image: [image1_4],
     title: "E-Commerce",
     github: "",
     demo: "",
