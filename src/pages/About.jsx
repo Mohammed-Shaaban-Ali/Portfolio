@@ -44,6 +44,8 @@ const About = () => {
                 {typeof aboutContent !== "string" &&
                   aboutContent.map((item, i) => (
                     <span
+                      data-aos="fade-up"
+                      data-aos-anchor-placement="top-bottom"
                       className={`${
                         i === 0 && "text-primary-400"
                       } ${arabFontsiz}`}

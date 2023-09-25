@@ -241,7 +241,7 @@ const Projects = () => {
             <div className=" containerimage  ">
               {projectLoop?.map((project, index) => {
                 return (
-                  <div key={index} className="cardimage">
+                  <div data-aos="zoom-out-up" key={index} className="cardimage">
                     <div className="imagecontent">
                       <div className="overlaycard"></div>
                       <div className="image">
