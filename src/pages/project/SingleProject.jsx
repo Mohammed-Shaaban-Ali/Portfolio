@@ -10,11 +10,10 @@ import "./Projects.css";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import closeimage from "../../assets/close.svg";
 
 const SingleProject = ({ setopen, project }) => {
   return (
-    <div className="gallary">
+    <div className="dirction gallary">
       <div onClick={() => setopen(null)} className="over"></div>
       <div className="boxcontainer">
         <div className="imageslider">

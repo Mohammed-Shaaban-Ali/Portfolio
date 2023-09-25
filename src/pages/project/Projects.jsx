@@ -214,7 +214,7 @@ const Projects = () => {
           </div>
           <div className="">
             {pathname === "/projects" && (
-              <div className={`catrgories `}>
+              <div className={` dirction catrgories `}>
                 {categories?.map((category, i) => {
                   return (
                     <div
