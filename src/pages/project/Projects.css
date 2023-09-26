@@ -238,7 +238,7 @@
     height: 70%;
     z-index: 20;
     background-color: white;
-    overflow-y: scroll;
+    overflow: scroll;
     margin-top: -100px;
 
 }
