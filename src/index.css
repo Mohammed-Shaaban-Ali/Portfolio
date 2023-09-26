@@ -46,6 +46,11 @@ body {
     color: white;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+}
+
 .arabFont {
     font-family: 'Noto Nastaliq Urdu', serif;
     /* font-family: 'Roboto', sans-serif; */
