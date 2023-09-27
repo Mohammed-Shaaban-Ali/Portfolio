@@ -5,9 +5,13 @@ import { useTranslation } from "react-i18next";
 import SectionTitle from "../../components/SectionTitle";
 
 import "./Projects.css";
+import { BsFillCursorFill } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
 import { BsFillEyeFill } from "react-icons/bs";
-import { BsFillCursorFill } from "react-icons/bs";
+
+// logo
+import logo from "../../assets/logo.png";
+
 // E-commerce
 import Ecommere1 from "../../assets/projects/E-commere/1.png";
 import Ecommere2 from "../../assets/projects/E-commere/1-2.png";
@@ -63,6 +67,10 @@ import SpecialDesign from "../../assets/projects/Special-Design/1.png";
 import myfirst from "../../assets/projects/myfirstproject/1.png";
 
 import SingleProject from "./SingleProject";
+// import ImageLode from "../../components/ImageLode";
+
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const projects = [
   {
@@ -252,7 +260,14 @@ const Projects = () => {
                     <div className=" imagecontent">
                       <div className="overlaycard"></div>
                       <div className="image">
-                        <img src={project.image[0]} alt={project.title} />
+                        {/* <ImageLode src={project.image[0]} alt={project.title} /> */}
+                        <LazyLoadImage
+                          effect="blue"
+                          placeholderSrc={logo}
+                          width="100%"
+                          src={project.image[0]}
+                          alt={project.title}
+                        />
                       </div>
                       <div className="cardicon">
                         <a href={project.github} target="_blank">

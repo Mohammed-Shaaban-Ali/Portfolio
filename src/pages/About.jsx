@@ -41,7 +41,7 @@ const About = () => {
                   aboutContent.map((item, i) => (
                     <span
                       data-aos="fade-up"
-                      // data-aos-anchor-placement="top-bottom"
+                      data-aos-duration="500"
                       className={`${
                         i === 0 && "text-primary-400"
                       } ${arabFontsiz}`}
