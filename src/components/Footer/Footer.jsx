@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer>
       <div data-aos="zoom-in-right" className="logo">
-        <img src={logo} alt="logo" />
+        <img width={60} height={60} src={logo} alt="logo" />
       </div>
 
       <div className="menu">

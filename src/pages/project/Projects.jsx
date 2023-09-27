@@ -262,11 +262,13 @@ const Projects = () => {
                       <div className="image">
                         {/* <ImageLode src={project.image[0]} alt={project.title} /> */}
                         <LazyLoadImage
-                          effect="blue"
+                          effect="black-and-white"
                           placeholderSrc={logo}
                           width="100%"
+                          height="100%"
                           src={project.image[0]}
                           alt={project.title}
+                          // visibleByDefault={src === logo}
                         />
                       </div>
                       <div className="cardicon">

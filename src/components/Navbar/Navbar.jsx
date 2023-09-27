@@ -52,7 +52,7 @@ const Navbar = () => {
     <>
       <div className=" navbar">
         <div className="left">
-          <img src={logo} alt="logo" />
+          <img width={60} height={60} src={logo} alt="logo" />
         </div>
         <div className="center">
           {typeof navBar !== "string" &&
