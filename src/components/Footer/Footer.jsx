@@ -10,23 +10,36 @@ const Footer = () => {
   const navBar = t("navbar.nav", { returnObjects: true });
   return (
     <footer>
-      <div className="logo">
+      <div data-aos="zoom-in-right" className="logo">
         <img src={logo} alt="logo" />
       </div>
+
       <div className="menu">
         {typeof navBar !== "string" &&
           navBar.map((nav, i) => (
-            <NavLink key={i} to={nav.path} className="link">
+            <NavLink
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              key={i}
+              to={nav.path}
+              className="link"
+            >
               {nav.name}
             </NavLink>
           ))}
       </div>
+
       <div className="social_med">
-        <NavLink to="www.linkedin.com/in/mohammedٍshaaban" className="scoial">
+        <NavLink
+          data-aos="zoom-in-up"
+          to="www.linkedin.com/in/mohammedٍshaaban"
+          className="scoial"
+        >
           <BsLinkedin />
           <p>{t("Linkedin")}</p>
         </NavLink>
         <NavLink
+          data-aos="zoom-in-up"
           to="https://github.com/Mohammed-Shaaban-Ali"
           className="scoial"
         >
@@ -34,6 +47,7 @@ const Footer = () => {
           <p>{t("Github")}</p>
         </NavLink>
         <NavLink
+          data-aos="zoom-in-up"
           to="https://api.whatsapp.com/send/?phone=201224146762"
           className="scoial"
         >
@@ -41,6 +55,7 @@ const Footer = () => {
           <p>{t("Whatsapp")}</p>
         </NavLink>
         <NavLink
+          data-aos="zoom-in-up"
           to="https://www.facebook.com/profile.php?id=100013011452691"
           className="scoial"
         >
