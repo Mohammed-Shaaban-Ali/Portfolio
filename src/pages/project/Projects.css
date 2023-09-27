@@ -15,7 +15,7 @@
     gap: 16px;
     box-shadow: 0px 0px 4px 0px var(--color-4);
     padding: 8px;
-    /* cursor: pointer; */
+    background-color: #373dff12;
 }
 
 .imagecontent {

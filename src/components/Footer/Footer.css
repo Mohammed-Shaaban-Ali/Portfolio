@@ -43,8 +43,10 @@ footer {
     cursor: pointer;
     transition: 0.5s linear;
     background-color: transparent;
-    font-weight: 600;
+
     border-radius: 8px 12px;
+    font-size: 16px !important;
+    font-weight: 600;
 }
 
 

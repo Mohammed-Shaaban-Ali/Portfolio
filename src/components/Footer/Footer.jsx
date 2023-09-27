@@ -22,22 +22,31 @@ const Footer = () => {
           ))}
       </div>
       <div className="social_med">
-        <div className="scoial">
+        <NavLink to="www.linkedin.com/in/mohammedٍshaaban" className="scoial">
           <BsLinkedin />
           <p>{t("Linkedin")}</p>
-        </div>
-        <div className="scoial">
+        </NavLink>
+        <NavLink
+          to="https://github.com/Mohammed-Shaaban-Ali"
+          className="scoial"
+        >
           <BsGithub />
           <p>{t("Github")}</p>
-        </div>
-        <div className="scoial">
+        </NavLink>
+        <NavLink
+          to="https://api.whatsapp.com/send/?phone=201224146762"
+          className="scoial"
+        >
           <BsWhatsapp />
           <p>{t("Whatsapp")}</p>
-        </div>
-        <div className="scoial">
+        </NavLink>
+        <NavLink
+          to="https://www.facebook.com/profile.php?id=100013011452691"
+          className="scoial"
+        >
           <BsFacebook />
           <p>{t("Facebook")}</p>
-        </div>
+        </NavLink>
       </div>
     </footer>
   );

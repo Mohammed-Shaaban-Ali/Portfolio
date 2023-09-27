@@ -1,20 +1,13 @@
-import { m, LazyMotion, domAnimation } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
-const SectionTitle = (props) => {
+const SectionTitle = ({ title, subtitle }) => {
   const { t } = useTranslation();
 
-  const { title, subtitle } = props;
   const font = t("font");
 
   return (
-    <LazyMotion features={domAnimation} strict>
-      <m.div
-        initial={{ x: -350 }}
-        whileInView={{ x: 0 }}
-        transition={{ duration: 0.6, type: "spring" }}
-        className="text-primary-500 p-6 noselect"
-      >
+    <>
+      <div data-aos="fade-right" className="text-primary-500 p-6 noselect">
         <span
           className="opacity-50"
           style={{
@@ -40,8 +33,8 @@ const SectionTitle = (props) => {
             );
           })}
         </h2>
-      </m.div>
-    </LazyMotion>
+      </div>
+    </>
   );
 };
 
