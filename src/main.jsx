@@ -59,7 +59,7 @@ i18next
           about_content: [
             "Hello there, I'm so happy you are here! (:",
 
-            "My name is Mohammed Shaaban, I'm 20 and a third-year computer science student based in Menof. I have a strong passion for the technologies related to the Frontend,Backend and UX.",
+            "My name is Mohammed Shaaban, I'm 20 and a third-year computer science student based in Menof. I have a strong passion for the technologies related to the Frontend, Backend.",
             " Junior Frontend Developer with 1+ years of experience designing and building responsive web design. Proficient with React and Node Frameworks. Passionate about learning and development with a desire to apply skills on a larger development team. Eager to tackle more complex problems and continue to find ways to maximize user efficiency",
           ],
           skills: {

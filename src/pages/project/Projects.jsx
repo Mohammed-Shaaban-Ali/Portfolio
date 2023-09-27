@@ -1,4 +1,4 @@
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 import { useTranslation } from "react-i18next";
@@ -203,6 +203,9 @@ const Projects = () => {
     }
   }, [categor]);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className=" relative w-full overflow-hidden-web flex justify-center">
@@ -231,7 +234,7 @@ const Projects = () => {
               </div>
             )}
             {pathname === "/" && (
-              <div className="dirction btnproject">
+              <div data-aos="fade-right" className="dirction btnproject">
                 <Link className="LastProject">{lastProject}</Link>
                 <Link to="/projects" className="viewall">
                   {viewall}
@@ -241,8 +244,12 @@ const Projects = () => {
             <div className=" containerimage  ">
               {projectLoop?.map((project, index) => {
                 return (
-                  <div data-aos="zoom-out-up" key={index} className="cardimage">
-                    <div className="imagecontent">
+                  <div
+                    data-aos="zoom-out-up"
+                    key={index}
+                    className="dirction cardimage"
+                  >
+                    <div className=" imagecontent">
                       <div className="overlaycard"></div>
                       <div className="image">
                         <img src={project.image[0]} alt={project.title} />
