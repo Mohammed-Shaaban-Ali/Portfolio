@@ -51,34 +51,18 @@ const Navbar = () => {
   return (
     <>
       <div className=" navbar">
-        <div className="left">
+        <div data-aos="fade-right" className="left">
           <img width={60} height={60} src={logo} alt="logo" />
         </div>
-        <div className="center">
+        <div data-aos="fade-down" className="center">
           {typeof navBar !== "string" &&
             navBar.map((nav, i) => (
               <NavLink key={i} to={nav.path} className="link">
                 {nav.name}
               </NavLink>
             ))}
-
-          {/* <NavLink to="/a" className="link">
-            About
-          </NavLink>
-          <NavLink to="/a" className="link">
-            Skills
-          </NavLink>
-          <NavLink to="/a" className="link">
-            Projects
-          </NavLink>
-          <NavLink to="/a" className="link">
-            Education
-          </NavLink>
-          <NavLink to="/a" className="link">
-            Talk Me
-          </NavLink> */}
         </div>
-        <div className="right">
+        <div data-aos="fade-left" className="right">
           <div className="lang">
             {languages.map(({ code, name, country_code }) => {
               if (currentLanguageCode !== code)
@@ -114,44 +98,6 @@ const Navbar = () => {
               </NavLink>
             </div>
           ))}
-        {/* <div className={`wrapper`}>
-          <span>Home</span>
-          <NavLink className={`icon nav_icon`}>
-            <AiTwotoneHome />
-          </NavLink>
-        </div>
-        <div className={`wrapper  `}>
-          <span>About</span>
-          <NavLink className={`icon nav_icon`}>
-            <FaUserAlt />
-          </NavLink>
-        </div>
-        <div className={`wrapper  `}>
-          <span>Skills</span>
-          <NavLink className={`icon nav_icon`}>
-            <FaBookOpen />
-          </NavLink>
-        </div>
-
-        <div className={`wrapper  `}>
-          <span>Projects</span>
-          <NavLink className={`icon nav_icon`}>
-            <SiUpwork />
-          </NavLink>
-        </div>
-
-        <div className={`wrapper  `}>
-          <span>Education</span>
-          <NavLink className={`icon nav_icon`}>
-            <FaAward />
-          </NavLink>
-        </div>
-        <div className={`wrapper  `}>
-          <span>Talk Me</span>
-          <NavLink className={`icon nav_icon`}>
-            <AiFillMessage />
-          </NavLink>
-        </div> */}
       </div>
     </>
   );
