@@ -39,7 +39,7 @@ html {
 
 body {
     background: url("https://uploads-ssl.webflow.com/62e3ee10882dc50bcae8d07a/631a5d4631d4c55a475f3e34_noise-50.png");
-    background-color: #444158;
+    background-color: #23024d;
     position: relative;
     overflow-x: hidden;
     -webkit-overflow-x: hidden;
@@ -488,11 +488,9 @@ textarea {
     }
 
     .boxcontainer {
-        height: 50%;
-        width: 90%;
+        height: 50% !important;
+        width: 95% !important;
+        margin: auto !important;
     }
-}
 
-img {
-    object-fit: cover;
 }
