@@ -30,7 +30,10 @@ const Footer = () => {
       </div>
 
       <div data-aos="zoom-in-up" data-aos-duration="500" className="social_med">
-        <NavLink to="www.linkedin.com/in/mohammedٍshaaban" className="scoial">
+        <NavLink
+          to="https://linkedin.com/in/mohammedٍshaaban"
+          className="scoial"
+        >
           <BsLinkedin />
           <p>{t("Linkedin")}</p>
         </NavLink>
