@@ -63,6 +63,8 @@ import ECommerceDashboard3 from "../../assets/projects/E-CommerceDashboard/1-3.p
 // Special-Design
 import SpecialDesign from "../../assets/projects/Special-Design/1.png";
 
+// to do list
+import todo from "../../assets/projects/todolist/1.png";
 // my-first-project
 import myfirst from "../../assets/projects/myfirstproject/1.png";
 
@@ -138,10 +140,10 @@ const projects = [
     category: "Full Stack",
   },
   {
-    image: [News1, News2],
-    title: "News-Website",
-    github: "https://github.com/Mohammed-Shaaban-Ali/News-Website",
-    demo: "https://news-website-1.web.app/",
+    image: [todo],
+    title: "Ro Do List",
+    github: "https://github.com/Mohammed-Shaaban-Ali/Task",
+    demo: "https://task1-theta-gilt.vercel.app/",
     category: "React",
   },
   {
