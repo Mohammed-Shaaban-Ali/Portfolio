@@ -70,7 +70,7 @@ import SingleProject from "./SingleProject";
 // import ImageLode from "../../components/ImageLode";
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
-// import "react-lazy-load-image-component/src/effects/blur.css";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const projects = [
   {
@@ -267,10 +267,10 @@ const Projects = () => {
                       <div className="overlaycard"></div>
                       <div className="image">
                         <LazyLoadImage
-                          // effect="opacity"
+                          effect="opacity"
                           // placeholderSrc={logo}
-                          width="100%"
-                          height="100%"
+                          // width="100%"
+                          // height={100}
                           src={project.image[0]}
                           alt={project.title}
                         />
