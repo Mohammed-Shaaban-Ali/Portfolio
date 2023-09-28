@@ -5,7 +5,7 @@ footer {
     justify-content: space-between;
     padding: 30px 32px !important;
     box-shadow: 2px 0px 0px 1px rgba(0, 0, 0, 0.1);
-    background-color: #3c3745;
+    background-color: #180531;
 
 }
 
@@ -56,8 +56,10 @@ footer {
 }
 
 .scoial:hover:nth-child(1) {
-    background: linear-gradient(135deg, rgb(70, 70, 255), rgb(177, 177, 255));
+    /* background: linear-gradient(135deg, rgb(70, 70, 255), rgb(177, 177, 255)); */
 }
+
+.scoial:nth-child(1)::before {}
 
 .scoial:hover:nth-child(4) {
     background: linear-gradient(135deg, rgb(45, 45, 227), rgb(93, 93, 226));
