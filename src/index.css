@@ -492,3 +492,7 @@ textarea {
         width: 90%;
     }
 }
+
+img {
+    object-fit: cover;
+}

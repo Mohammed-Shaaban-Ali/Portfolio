@@ -70,7 +70,7 @@ import SingleProject from "./SingleProject";
 // import ImageLode from "../../components/ImageLode";
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
+// import "react-lazy-load-image-component/src/effects/blur.css";
 
 const projects = [
   {
@@ -102,13 +102,12 @@ const projects = [
     demo: "https://wibe-studio.pages.dev/",
     category: "React",
   },
-
   {
-    image: [Chat1, Chat2, Chat3],
-    title: "Chat App",
-    github: "https://github.com/Mohammed-Shaaban-Ali/Whatsapp-Frontend",
-    demo: "https://whatsapp-frontend-five.vercel.app/",
-    category: "Full Stack",
+    image: [News1, News2],
+    title: "News-Website",
+    github: "https://github.com/Mohammed-Shaaban-Ali/News-Website",
+    demo: "https://news-website-1.web.app/",
+    category: "React",
   },
 
   {
@@ -130,6 +129,13 @@ const projects = [
     github: "https://github.com/Mohammed-Shaaban-Ali/Dashboard",
     demo: "https://dashboard-kappa-plum.vercel.app/",
     category: "React",
+  },
+  {
+    image: [Chat1, Chat2, Chat3],
+    title: "Chat App",
+    github: "https://github.com/Mohammed-Shaaban-Ali/Whatsapp-Frontend",
+    demo: "https://whatsapp-frontend-five.vercel.app/",
+    category: "Full Stack",
   },
   {
     image: [News1, News2],
@@ -260,15 +266,13 @@ const Projects = () => {
                     <div className=" imagecontent">
                       <div className="overlaycard"></div>
                       <div className="image">
-                        {/* <ImageLode src={project.image[0]} alt={project.title} /> */}
                         <LazyLoadImage
-                          effect="black-and-white"
-                          placeholderSrc={logo}
+                          // effect="opacity"
+                          // placeholderSrc={logo}
                           width="100%"
                           height="100%"
                           src={project.image[0]}
                           alt={project.title}
-                          // visibleByDefault={src === logo}
                         />
                       </div>
                       <div className="cardicon">

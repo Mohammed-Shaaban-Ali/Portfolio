@@ -18,6 +18,7 @@ export default {
         200: "#FDFDFF",
         950: "#16161b",
       },
+      load: "#3c3745",
     },
   },
   plugins: [],

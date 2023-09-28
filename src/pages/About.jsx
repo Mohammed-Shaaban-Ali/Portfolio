@@ -1,10 +1,11 @@
+import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
+
 import SectionTitle from "../components/SectionTitle";
 import ImageSlider from "../components/ImageSlider";
 import avater from "../assets/avatar/avatar.png";
-import { useTranslation } from "react-i18next";
-import { useEffect } from "react";
-import { m, LazyMotion, domAnimation } from "framer-motion";
+
 const About = () => {
   const { pathname } = useLocation();
 
@@ -17,6 +18,7 @@ const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <div
       id="about"
