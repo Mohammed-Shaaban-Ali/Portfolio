@@ -9,6 +9,7 @@ import gitIcon from "../assets/tech/git.png";
 import githubIcon from "../assets/tech/github.png";
 import viteIcon from "../assets/tech/vite.svg";
 import nodeIcon from "../assets/tech/node.webp";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const skillsIcon = [
   htmlIcon,
@@ -47,7 +48,7 @@ const SkillsCards = () => {
               className="card w-[300px] h-[300px] flex flex-col items-center  bg-primary-500 rounded-xl border-4 border-primary-600 cursor-pointer"
             >
               <div className="w-full h-[60px] flex items-center gap-2 p-1 flex-col">
-                <img
+                <LazyLoadImage
                   className="h-[50px] flex justify-center items-center w-[50px]  bg-primary-500 rounded-[50%] p-1 object-contain"
                   src={skillsIcon[index]}
                   alt={skill.title}

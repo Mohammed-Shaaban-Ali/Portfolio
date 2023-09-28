@@ -1,15 +1,13 @@
+import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
-import "./index.css";
 import { BrowserRouter } from "react-router-dom";
-import React, { Suspense } from "react";
 import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
-import LanguageDetector from "i18next-browser-languagedetector";
 
+import LanguageDetector from "i18next-browser-languagedetector";
+import App from "./App.jsx";
+import "./index.css";
 import "flag-icon-css/css/flag-icon.min.css";
-import PreloadMedia from "./components/PreloadMedia.jsx";
-import { media } from "./Constants/constants.js";
 
 i18next
   .use(initReactI18next)
@@ -258,15 +256,10 @@ i18next
       caches: ["cookie"],
     },
   });
-
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <Suspense fallback={PreloadMedia}>
-    <React.StrictMode>
-      <BrowserRouter>
-        <PreloadMedia images={Object.values(media)}>
-          <App />
-        </PreloadMedia>
-      </BrowserRouter>
-    </React.StrictMode>
-  </Suspense>
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
 );
