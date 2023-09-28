@@ -9,9 +9,6 @@ import { BsFillCursorFill } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
 import { BsFillEyeFill } from "react-icons/bs";
 
-// logo
-import logo from "../../assets/logo.png";
-
 // E-commerce
 import Ecommere1 from "../../assets/projects/E-commere/1.png";
 import Ecommere2 from "../../assets/projects/E-commere/1-2.png";
@@ -72,7 +69,6 @@ import SingleProject from "./SingleProject";
 // import ImageLode from "../../components/ImageLode";
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
 
 const projects = [
   {
@@ -269,10 +265,10 @@ const Projects = () => {
                       <div className="overlaycard"></div>
                       <div className="image">
                         <LazyLoadImage
-                          effect="opacity"
+                          // effect="black-and-white"
                           // placeholderSrc={logo}
                           // width="100%"
-                          // height={100}
+                          // height="100%"
                           src={project.image[0]}
                           alt={project.title}
                         />
