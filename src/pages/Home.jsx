@@ -1,5 +1,3 @@
-import { m, LazyMotion, domAnimation } from "framer-motion";
-
 import HeroParticles from "../components/Particles/HeroParticles";
 import { useTranslation } from "react-i18next";
 const Home = () => {
@@ -15,9 +13,9 @@ const Home = () => {
     >
       <div className="blur homeblur"></div>
       <div className="blur homeblur2"></div>
-      <LazyMotion features={domAnimation} strict>
+      <>
         <div className="blur heroblur"></div>
-        <m.div
+        <div
           id="hero"
           className="relative w-full flex justify-center items-center h-screen min-h-[600px]"
         >
@@ -26,27 +24,23 @@ const Home = () => {
             className="noselect w-fit h-fit text-grayscale-50 absolute z-10 flex flex-col justify-center items-center rounded-[50%]"
             id="repulse-div"
           >
-            <LazyMotion features={domAnimation} strict>
-              <m.h1
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.6, type: "spring" }}
+            <>
+              <h1
                 className="text-center flex justify-center items-center flex-col opacity-100 text-7xl sm:text-9xl cursor-default"
                 style={{ fontFamily: "SuperMario" }}
               >
-                <m.span
-                  initial={{ x: -100 }}
-                  whileInView={{ x: 0 }}
-                  transition={{ duration: 0.6, type: "spring" }}
+                <span
+                  data-aos="fade-right"
+                  data-aos-duration="750"
                   className="who"
                   style={{ marginBottom: "20px" }}
                 >
                   {who}{" "}
-                </m.span>
-                <m.div
+                </span>
+                <div
                   className={`${font}`}
-                  initial={{ x: 100 }}
-                  whileInView={{ x: 0 }}
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
                   transition={{ duration: 0.6, type: "spring" }}
                 >
                   {name.split("").map((char, index) => {
@@ -62,14 +56,14 @@ const Home = () => {
                       </span>
                     );
                   })}
-                </m.div>
-              </m.h1>
-            </LazyMotion>
+                </div>
+              </h1>
+            </>
           </div>
 
           <HeroParticles />
-        </m.div>
-      </LazyMotion>
+        </div>
+      </>
     </div>
   );
 };
