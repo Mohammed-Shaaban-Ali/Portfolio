@@ -12,6 +12,7 @@ const Skills = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <div
       id="skills"
@@ -23,6 +24,7 @@ const Skills = () => {
         <div className="w-full">
           <SectionTitle title={title} subtitle={subtitle} />
         </div>
+
         <div
           data-aos="fade-up"
           className="xl:border-l-2 xl:border-r-2 xl:border-primary-400  dirction skillsborder"

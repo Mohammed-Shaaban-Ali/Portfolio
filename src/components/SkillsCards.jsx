@@ -27,6 +27,7 @@ const SkillsCards = () => {
   const { t } = useTranslation();
   const skills = t("skills.skill", { returnObjects: true });
   const fontsize = t("fontsize");
+
   return (
     <div className="flex dirction">
       <LazyMotion features={domAnimation} strict>
