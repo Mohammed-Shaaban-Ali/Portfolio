@@ -1,4 +1,3 @@
-import { useEffect, useState, useRef } from "react";
 import { m, LazyMotion, domAnimation } from "framer-motion";
 
 const ImageSlider = ({ images }) => {

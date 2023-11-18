@@ -42,7 +42,7 @@ i18next
               { name: "About", path: "/about" },
               { name: "Skills", path: "/skills" },
               { name: "Projects", path: "/projects" },
-              { name: "Content", path: "/content" },
+              { name: "Contact", path: "/content" },
             ],
           },
 

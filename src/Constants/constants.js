@@ -1,18 +1,3 @@
-// import { library } from "@fortawesome/fontawesome-svg-core";
-// import {
-//   faX,
-//   faBars,
-//   faWindowRestore,
-//   faBagShopping,
-//   faDiceD6,
-//   faEnvelope,
-// } from "@fortawesome/free-solid-svg-icons";
-// import {
-//   faReact,
-//   faGithub,
-//   faLinkedin,
-// } from "@fortawesome/free-brands-svg-icons";
-
 import {
   htmlIcon,
   cssIcon,
@@ -25,8 +10,6 @@ import {
   nodeIcon,
   avatar,
 } from "../assets";
-
-// library.add(faX, faBars, faWindowRestore, faBagShopping, faDiceD6);
 
 const media = {
   htmlIcon,
@@ -42,18 +25,6 @@ const media = {
 
   avatar,
 };
-
-// const icons = {
-//   faBars,
-//   faX,
-//   faWindowRestore,
-//   faBagShopping,
-//   faDiceD6,
-//   faReact,
-//   faGithub,
-//   faLinkedin,
-//   faEnvelope,
-// };
 
 const memoji = {
   image: [avatar],
