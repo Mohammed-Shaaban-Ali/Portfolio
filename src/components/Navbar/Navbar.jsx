@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import cookies from "js-cookie";
@@ -11,7 +11,6 @@ import "./Navbar.css";
 import { AiFillMessage } from "react-icons/ai";
 import { FaBookOpen } from "react-icons/fa";
 import { SiUpwork } from "react-icons/si";
-import { FaAward } from "react-icons/fa";
 
 import logo from "../../assets/logo.png";
 
@@ -22,7 +21,6 @@ const Navbar = () => {
     <FaUserAlt />,
     <FaBookOpen />,
     <SiUpwork />,
-    // <FaAward />,
     <AiFillMessage />,
   ];
   const navBar = t("navbar.nav", { returnObjects: true });
