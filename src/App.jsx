@@ -7,13 +7,13 @@ import Footer from "./components/Footer/Footer";
 const MainPage = lazy(() => import("./pages/MainPage"));
 const About = lazy(() => import("./pages/About"));
 const Skills = lazy(() => import("./pages/Skills"));
-const Content = lazy(() => import("./pages/Content"));
+const Content = lazy(() => import("./pages/Contact"));
 const Projects = lazy(() => import("./pages/project/Projects"));
-
+// AOS
 import AOS from "aos";
 import "aos/dist/aos.css";
-
 function App() {
+  // AOS
   useEffect(() => {
     AOS.init();
     AOS.refresh();
