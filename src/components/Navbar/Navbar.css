@@ -119,6 +119,10 @@
   background-color: var(--color-bg-variant);
   width: 10px;
   height: 10px;
+  -webkit-transform: translateX(50%) rotate(45deg);
+  -moz-transform: translateX(50%) rotate(45deg);
+  -ms-transform: translateX(50%) rotate(45deg);
+  -o-transform: translateX(50%) rotate(45deg);
 }
 
 .wrapper:hover span {
