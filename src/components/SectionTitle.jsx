@@ -1,10 +1,4 @@
-import { useTranslation } from "react-i18next";
-
 const SectionTitle = ({ title, subtitle }) => {
-  const { t } = useTranslation();
-
-  const font = t("font");
-
   return (
     <>
       <div data-aos="fade-right" className="text-primary-500 p-6 noselect">
