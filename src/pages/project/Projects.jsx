@@ -65,12 +65,29 @@ import todo from "../../assets/projects/todolist/1.png";
 // my-first-project
 import myfirst from "../../assets/projects/myfirstproject/1.png";
 
+import foodApp from "../../assets/projects/Food-app/Beige Brown Aesthetic Save The Date Editable Mockup Instagram Post.png";
+import Next14 from "../../assets/projects/Next14/a6242ea609106888bc22e282d26b61ee7afd8963.png";
+
 import SingleProject from "./SingleProject";
 // import ImageLode from "../../components/ImageLode";
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const projects = [
+  {
+    image: [foodApp],
+    title: "Food App",
+    github: "https://github.com/Mohammed-Shaaban-Ali/Foodi-App-Frontend",
+    demo: "https://foodi-app-auth.web.app/",
+    category: "Full Stack",
+  },
+  {
+    image: [Next14],
+    title: "Landing page Next14",
+    github: "https://github.com/Mohammed-Shaaban-Ali/Landing-page_Next-14",
+    demo: "https://landing-page-next-14.vercel.app/",
+    category: "Next",
+  },
   {
     image: [
       Ecommere1,
@@ -86,6 +103,7 @@ const projects = [
     demo: "https://e-commerce-v8ra.onrender.com/",
     category: "Full Stack",
   },
+
   {
     image: [Blog1],
     title: "Blog App",
@@ -184,6 +202,7 @@ const Projects = () => {
     "Last Project",
     "Full Stack",
     "React",
+    "Next",
     "JavaScript",
   ];
   const [open, setopen] = useState(null);
@@ -208,6 +227,8 @@ const Projects = () => {
       setprojectLoop(
         projects.filter((project) => project.category === "Full Stack")
       );
+    } else if (categor === "Next") {
+      setprojectLoop(projects.filter((project) => project.category === "Next"));
     } else {
       setprojectLoop(
         projects.filter((project) => project.category === "React")
